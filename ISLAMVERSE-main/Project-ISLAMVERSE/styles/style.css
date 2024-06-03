@@ -1,0 +1,423 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+/* navbar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.container-nav {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav img {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-nav h1 {
+    display: inline;
+    font-family: "Cinzel Decorative", serif;
+    margin-left: 5px;
+}
+
+/* end of navbar */
+
+/* main */
+.container-kaligrafi {
+    display: flex;
+    justify-content: center;
+}
+
+.container-kaligrafi img {
+    max-width: 80%;
+    max-height: 500px;
+}
+
+.container-home {
+    margin-bottom: 100px;
+}
+
+.container-surat {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.list-surat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.list-surat:hover {
+    color: white;
+    background-color: #0A4D45;
+}
+
+.nama-surat .arti-surat {
+    font-size: 10px;
+}
+
+.container-list-ayat {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.list-ayat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.nomor-ayat {
+    margin-left: 5px;
+}
+
+.arab-ayat {
+    max-width: 50%;
+    max-height: auto;
+    padding: 30px;
+}
+
+.arab-ayat h2 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.arti-ayat {
+    margin-left: 5px;
+}
+
+.arti-ayat p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.arab-latin {
+    color: rgb(117, 100, 1);
+}
+
+/* end of main */
+
+/* footer */
+footer {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.container-menu {
+    background: linear-gradient(#0A4D45 100%, #17B3A033 20%);
+    max-width: 100%;
+    height: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-alquran img {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-zikir img {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-quiz img {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-artikel img {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-kalkulator-zakat img {
+    max-width: 50px;
+    height: auto;
+}
+
+/* end of footer */
+
+/* 375 */
+@media screen and (min-width: 375px) {}
+
+/* 375 end */
+
+/* 425 */
+@media screen and (min-width: 425px) {}
+
+/* 425 end */
+
+
+/* 768 */
+@media screen and (min-width: 768px) {
+
+    .kaligrafi {
+        margin-left: 110px;
+    }
+
+    .container-surat {
+        margin: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+}
+
+/* 768 end */
+
+/* 1024 */
+@media screen and (min-width: 1024px) {
+
+    .kaligrafi {
+        margin-left: 250px;
+    }
+
+    .container-surat {
+        margin: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+}
+
+/* 1024 end */
+
+/* 1440 */
+@media screen and (min-width: 1440px) {
+
+    .kaligrafi {
+        margin-left: 450px;
+    }
+
+    .container-surat {
+        margin: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+}
+
+/* 1440 end */
+
+/* style of zikir */
+button {
+    background-color: #0A4D45;
+    color: white;
+    padding: 15px 25px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #185350;
+    color: rgb(243, 208, 94);
+    font-weight: bold;
+}
+
+#startButton {
+    position: relative;
+    margin: 0 auto;
+}
+
+h3 {
+    padding-top: 500px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline;
+    /* Teks dalam elemen h3 akan muncul secara inline dengan jumlah count */
+}
+
+.zikir {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+section {
+    line-height: 1.5;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.arab {
+    text-align: right;
+    font-size: larger;
+}
+
+.dua {
+    margin-top: 40px;
+}
+
+article {
+    border-radius: 10px;
+    border: 2px solid #94a3a1;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* end of style of zikir  */
+
+/* style of zakat */
+.zakat{
+    text-align: justify;
+}
+
+.zakat-button{
+    margin-top: 25px;
+    padding: 15px 25px;
+}
+
+input[type="number"] {
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.contoh {
+    list-style-type: none;
+}
+
+.baznas{
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+/* end of style zakat */
+
+/* style quiz */
+.container-quiz {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #a8e59363;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.correct {
+    background-color: #4CAF50 !important;
+    color: white;
+}
+
+.incorrect {
+    background-color: #f44336 !important;
+    color: white;
+}
+
+.options button {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.options button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* end of style quiz */
+
+/* style article */
+.article-template{
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.articles{
+    border: none;
+}
+
+main ul li {
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.centered-quote {
+    text-align: center;
+    margin: 20px 0;
+    display: inline-block;
+    font-style: italic;
+    padding: 10px 20px;
+    border-left: 4px solid #ccc;
+    border-right: 4px solid #ccc;
+}
+/* end of style article */

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- font untuk judul -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- font untuk judul end -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Zakat</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <nav-bar></nav-bar>
+
+    <main>
+        <h3 class="zikir">KALKULATOR ZAKAT</h3><br><br><br><br>
+
+        <div>
+            <label for="monthlyIncome">Penghasilan Per Bulan (Rp):</label>
+            <input type="number" id="monthlyIncome"><br>
+        </div>
+        <button class="zakat-button" onclick="calculateZakat()">Hitung Zakat</button>
+
+        <div id="result"></div>
+
+        <article class="zakat">
+            <section>
+                Zakat merupakan bagian dari fondasi rukun Islam yang dapat mensucikan harta dan jiwa, sekaligus dapat
+                membuat harta lebih berkah.
+                Zakat penghasilan atau dikenal dengan zakat profesi merupakan salah satu bagian dari zakat mal yang
+                wajib ditunaikan oleh umat Muslim yang telah mendapat penghasilan dari pekerjaannya. Tentunya pekerjaan
+                yang dimaksud merujuk pada pekerjaan yang halal dan tidak melanggar syariah Islam. Sesuai yang tercantum
+                dalam Fatwa Majelis Ulama Indonesia (MUI) Nomor 3 Tahun 2003, yang dimaksud dengan
+                penghasilan merupakan pendapatan seperti gaji, honorarium, upah, jasa, dan pendapatan lain yang
+                diperoleh dengan cara halal.
+            </section>
+            <section>
+                Nisab zakat pendapatan dan jasa tahun 2024 senilai 85 gram emas atau setara dengan
+                Rp82.312.725,00/tahun atau Rp6.859.394,00/bulan. Kadar zakat pendapatan dan jasa senilai 2,5%.
+            </section>
+            <section>
+                <ol class="contoh">
+                    <li>Contoh 1: Seseorang dengan penghasilan Rp10.000.000,00 per bulan. Dalam setahun, penghasilannya
+                        mencapai Rp120.000.000,00, yang melebihi nisab Zakat Pendapatan dan Jasa tahun 2024
+                        (Rp82.312.725,00). Oleh karena itu, orang tersebut wajib membayar zakat, dengan jumlah yang
+                        dihitung berdasarkan 2,5% dari total penghasilannya.
+
+                    </li>
+                    <br>
+                    <li>Contoh 2: Seseorang dengan penghasilan Rp3.000.000,00 per bulan. Dalam setahun, penghasilannya
+                        hanya mencapai Rp36.000.000,00, yang kurang dari nisab Zakat Pendapatan dan Jasa tahun 2024.
+                        Oleh karena itu, orang tersebut tidak wajib membayar zakat karena belum mencapai nisab.</li>
+                </ol>
+            </section>
+        </article>
+        <article>
+            <section class="arab">
+                يٰٓاَيُّهَا الَّذِيْنَ اٰمَنُوْٓا اَنْفِقُوْا مِنْ طَيِّبٰتِ مَا كَسَبْتُمْ وَمِمَّآ اَخْرَجْنَا
+                لَكُمْ
+                مِّنَ الْاَرْضِۗ وَلَا تَيَمَّمُوا الْخَبِيْثَ مِنْهُ تُنْفِقُوْنَ وَلَسْتُمْ بِاٰخِذِيْهِ اِلَّآ
+                اَنْ
+                تُغْمِضُوْا فِيْهِۗ وَاعْلَمُوْٓا اَنَّ اللّٰهَ غَنِيٌّ حَمِيْدٌ
+            </section>
+            <section>
+                "Wahai orang-orang yang beriman! Infakkanlah sebagian dari hasil usahamu yang baik-baik dan sebagian
+                dari apa yang Kami keluarkan dari bumi untukmu. Janganlah kamu memilih yang buruk untuk kamu
+                keluarkan,
+                padahal kamu sendiri tidak mau mengambilnya melainkan dengan memicingkan mata (enggan) terhadapnya.
+                Dan
+                ketahuilah bahwa Allah Mahakaya, Maha Terpuji." (Q.S Al Baqarah: 267)
+            </section>
+        </article>
+
+        <article class="baznas">
+            Perhitungan berdasarkan Keputusan Ketua Badan Amil Zakat Nasional Republik Indonesia Tentang Nilai Nisab
+            Zakat Pendapatan Dan Jasa Tahun 2024 (berlaku surut sejak tanggal 1 Januari 2024).
+        </article>
+    </main>
+
+    <footer-bar></footer-bar>
+
+    <script src="../script/app.js" type="module"></script>
+    <script src="../script/zakat.js"></script>
+</body>
+
+</html>
