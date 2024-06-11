@@ -22,4 +22,5 @@ Situs web Islam yang bertujuan untuk memberikan sumber daya berkualitas, terperc
 
 islamversehub@gmail.com
 
+#### Capstone Project - C624-PS148 [SIB DICODING CYCLE 6]
 #### ©2024 ISLAMVERSE
