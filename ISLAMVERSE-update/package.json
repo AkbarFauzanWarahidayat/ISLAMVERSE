@@ -1,0 +1,12 @@
+{
+  "name": "islamverse-update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -o ./ISLAMVERSE-main/Project-ISLAMVERSE/index.html"
+  },
+  "author": "",
+  "license": "ISC"
+}
