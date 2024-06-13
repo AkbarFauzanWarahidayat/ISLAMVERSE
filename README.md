@@ -28,7 +28,7 @@ Situs web Islam yang bertujuan untuk memberikan sumber daya berkualitas, terperc
 
 2. *Instalasi Dependensi*: Pastikan Anda memiliki Node.js dan npm terinstal di komputer Anda. Kemudian, jalankan perintah npm install untuk menginstal semua dependensi yang diperlukan.
 
-3. *Menjalankan Aplikasi*: Setelah selesai menginstal dependensi, jalankan perintah npm start untuk memulai server lokal. Aplikasi akan dapat diakses pada http://localhost:8080 secara default.
+3. *Menjalankan Aplikasi*: Setelah selesai menginstal dependensi, jalankan perintah npm start untuk memulai server lokal.
 
 ## Contribution
 
