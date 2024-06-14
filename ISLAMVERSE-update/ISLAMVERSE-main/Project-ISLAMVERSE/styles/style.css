@@ -1,0 +1,588 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+/* navbar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav img {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-nav h1 {
+    display: inline;
+    font-family: "Cinzel Decorative", serif;
+    margin-left: 5px;
+}
+
+.profile-anchor{
+    display: block;
+    text-align: center;
+    width: 44px;
+    height: 44px;
+}
+
+.profile-anchor i{
+    margin-top: 10px;
+    font-size: 24px;
+}
+/* end of navbar */
+
+/* main */
+.container-kaligrafi {
+    display: flex;
+    justify-content: center;
+}
+
+.container-kaligrafi img {
+    max-width: 80%;
+    margin-right: 15px;
+    max-height: 500px;
+}
+
+.container-home {
+    margin-bottom: 100px;
+}
+
+.container-surat {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.list-surat {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.list-surat:hover {
+    background-color: #c3f0da;
+    transition: 0.3s ease-in-out;
+}
+
+.title-surat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tulisan-kaligrafi{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.container-audio{
+    border-top: black 2px solid;
+    margin-top: 10px;
+}
+
+.play-button {
+    margin-top: 30px;
+}
+
+.play-button i{
+    text-align: center;
+}
+
+.nama-surat .arti-surat {
+    font-size: 10px;
+}
+
+.container-list-ayat {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.list-ayat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nomor-ayat {
+    margin-left: 5px;
+}
+
+.arab-ayat {
+    max-width: 85%;
+    max-height: auto;
+    padding: 10px;
+}
+
+.arab-ayat h2 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.arti-ayat {
+    margin-left: 5px;
+}
+
+.arti-ayat p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.arab-latin {
+    color: rgb(117, 100, 1);
+}
+/* end of main */
+
+/* footer */
+footer {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.container-menu {
+    background: linear-gradient(#0A4D45 100%, #17B3A033 20%);
+    max-width: 100%;
+    height: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-alquran img {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-zikir img {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-quiz img {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-artikel img {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-kalkulator-zakat img {
+    max-width: 50px;
+    height: auto;
+}
+/* end of footer */
+
+/* 368 */
+@media screen and (min-width: 368px) {
+    .container-list-ayat {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+}
+/* 368 end */
+
+/* 768 */
+@media screen and (min-width: 768px) {
+    .kaligrafi {
+        margin-left: 110px;
+    }
+
+    .container-surat {
+        margin: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+/* 768 end */
+
+/* 1024 */
+@media screen and (min-width: 1024px) {
+    .kaligrafi {
+        margin-left: 250px;
+    }
+
+    .container-surat {
+        margin: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+/* 1024 end */
+
+/* 1440 */
+@media screen and (min-width: 1440px) {
+    .container-audio audio{
+        width: 190px;
+        height: 40px;
+    }
+
+    .kaligrafi {
+        margin-left: 450px;
+    }
+
+    .container-surat {
+        margin: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+/* 1440 end */
+
+/* style of zikir */
+button {
+    background-color: #0A4D45;
+    color: white;
+    padding: 15px 25px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #185350;
+    color: rgb(231, 225, 203);
+}
+
+#startButton {
+    position: relative;
+    margin: 0 auto;
+}
+
+h3 {
+    padding-top: 500px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline;
+    /* Teks dalam elemen h3 akan muncul secara inline dengan jumlah count */
+}
+
+.zikir {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+section {
+    line-height: 1.5;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.arab {
+    text-align: right;
+    font-size: larger;
+}
+
+.dua {
+    margin-top: 40px;
+}
+
+.zikir-container {
+    border-radius: 10px;
+    border: 2px solid #94a3a1;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* end of style of zikir  */
+
+/* style of zakat */
+.zakat-container{
+    text-align: justify;
+    border-radius: 10px;
+    border: 2px solid #94a3a1;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+input[type="text"] {
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.contoh {
+    list-style-type: none;
+}
+
+.baznas{
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+/* end of style zakat */
+
+/* style quiz */
+.container-quiz {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #cbf0bf63;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.correct {
+    background-color: #4CAF50 !important;
+    color: white;
+}
+
+.incorrect {
+    background-color: #f44336 !important;
+    color: white;
+}
+
+.options button {
+    width: 80%;
+    max-width: 300px;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.options button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* end of style quiz */
+
+/* style article */
+.article-template{
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 10px;
+    border: 2px solid #94a3a1;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.articles{
+    border: none;
+}
+
+main ol li {
+    margin-bottom: 5px;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+main ul li {
+    margin-bottom: 5px;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+li{
+    padding-left: 10px;
+}
+
+.centered-quote {
+    text-align: center;
+    margin: 20px 0;
+    display: inline-block;
+    font-style: italic;
+    padding: 10px 20px;
+    border-left: 4px solid #ccc;
+    border-right: 4px solid #ccc;
+}
+
+.centered-quote2 {
+    text-align: center;
+    margin: 20px 0;
+    display: inline-block;
+    font-style: normal;
+    padding: 10px 20px;
+    border-left: 4px solid #ccc;
+    border-right: 4px solid #ccc;
+}
+
+h4{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.article-2{
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.article-3{
+    border-radius: 10px;
+    border: 2px solid #94a3a1;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.bahagia{
+    width: 40%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.adverb{
+    margin: 0 25%;
+    font-size: 15px;
+    color: #0A4D45;
+    font-weight: bold;
+}
+
+.note{
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-top: double;
+    border-bottom: double;
+    border-top-color: #0A4D45;
+    border-bottom-color: #0A4D45;
+}
+
+.salawat{
+    font-weight: bold;
+    font-style: normal;
+    padding-top: 10px;
+    font-size: large;
+}
+
+.artikel-8{
+    text-align: justify;
+    padding-bottom: 10px;
+}
+/* end of style article */
+
+/* style of about us */
+.about-us {
+    padding: 50px 20px;
+}
+
+.team {
+    padding: 50px 20px;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title{
+    text-decoration: underline;
+}
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    max-width: 150px;
+    margin: 20px auto;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #0A4D45;
+    border: none;
+}
+
+.features {
+    padding: 50px 20px;
+}
+
+.features .card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .features .card {
+        margin-bottom: 30px;
+    }
+    .features .offset-md-2 {
+        margin-left: 16.666667%;
+    }
+}
+/* end of style about us */
