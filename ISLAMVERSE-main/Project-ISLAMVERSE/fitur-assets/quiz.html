@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- font untuk judul -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- font untuk judul end -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Islam</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <nav-bar></nav-bar>
+
+    <main>
+        <h3 class="zikir">QUIZ TIME!</h3><br><br><br>
+        <div class="container-quiz">
+            <div class="question">1. Al-Quran diturunkan kepada Nabi ...</div>
+            <div class="options">
+                <button onclick="checkAnswer(this, true)" data-original-text="Muhammad SAW">Muhammad SAW</button>
+                <button onclick="checkAnswer(this, false)">Musa AS</button>
+                <button onclick="checkAnswer(this, false)">Isa AS</button>
+            </div><br>
+
+            <div class="question">2. Kitab suci yang diturunkan sebelum Al-Qur'an adalah ...</div>
+            <div class="options">
+                <button onclick="checkAnswer(this, false)">Zabur</button>
+                <button onclick="checkAnswer(this, true)" data-original-text="Injil">Injil</button>
+                <button onclick="checkAnswer(this, false)">Taurat</button>
+            </div><br>
+
+            <div class="question">3. Kapan Allah <i>(Tuhan)</i> ada?</div>
+            <div class="options">
+                <button onclick="checkAnswer(this, true)"
+                    data-original-text="Tuhan ada sebelum waktu Dia ciptakan">Tuhan
+                    ada sebelum waktu <i>Dia</i> ciptakan</button>
+                <button onclick="checkAnswer(this, false)">Tuhan ada setelah munculnya alam semesta</button>
+                <button onclick="checkAnswer(this, false)">Tuhan ada setelah Big Bang</button>
+            </div><br>
+
+            <div class="question">4. Apa itu Islam?</div>
+            <div class="options">
+                <button onclick="checkAnswer(this, false)">Kelompok penyembah patung</button>
+                <button onclick="checkAnswer(this, false)">Kepercayaan yang berdasar pada ajaran, hidup, sengsara, wafat
+                    dan
+                    kebangkitan Yesus Kristus</button>
+                <button onclick="checkAnswer(this, true)"
+                    data-original-text="Agama yang berserah diri kepada Allah">Agama
+                    yang berserah diri kepada Allah</button>
+            </div><br>
+
+            <div class="question">5. Apa yang dimaksud dengan muhasabah?</div>
+            <div class="options">
+                <button onclick="checkAnswer(this, false)">Menyendiri</button>
+                <button onclick="checkAnswer(this, true)">Intropeksi diri</button>
+                <button onclick="checkAnswer(this, false)">Berdoa</button>
+            </div><br>
+
+            <div class="question">6. Apa Kiat Praktis Mengatasi Persoalan Hidup menurut Abdullah Gymnastiar, kecuali ...
+            </div>
+            <div class="options">
+                <button onclick="checkAnswer(this, false)">Ridho</button>
+                <button onclick="checkAnswer(this, false)">Jangan mempersulit diri</button>
+                <button onclick="checkAnswer(this, true)"
+                    data-original-text="Bermaalas-malasan">Bermalas-malasan</button>
+            </div><br>
+
+            <div class="question">7. Apa syarat penting saat berdoa?</div>
+            <div class="options">
+                <button onclick="checkAnswer(this, true)" data-original-text="Hati ikhlas dan yakin">Hati ikhlas dan
+                    yakin</button>
+                <button onclick="checkAnswer(this, false)">Dilakukan saat mau tidur</button>
+                <button onclick="checkAnswer(this, false)">Tidak yakin akan terkabulnya doa</button>
+            </div><br>
+
+            <div class="question">8. Siapakah sang pemberi kehidupan?</div>
+            <div class="options">
+                <button onclick="checkAnswer(this, false)">Roh kudus</button>
+                <button onclick="checkAnswer(this, true)" data-original-text="Allah SWT">Allah SWT</button>
+                <button onclick="checkAnswer(this, false)">Brahma</button>
+            </div><br>
+
+            <div class="question">9. Penyebab seseorang menjadi tidak bahagia adalah ?</div>
+            <div class="options">
+                <button onclick="checkAnswer(this, false)">Tidak pernah bersyukur</button>
+                <button onclick="checkAnswer(this, false)">Selalu mengingat masa lalu</button>
+                <button onclick="checkAnswer(this, true)" data-original-text="Semua benar">Semua benar</button>
+            </div><br>
+
+            <div class="question">10. <i>"Maka sesungguhnya bersama kesulitan ada kemudahan"</i> merupakan arti
+                Al-Qur'an
+                surah ...</div>
+            <div class="options">
+                <button onclick="checkAnswer(this, false)">An-Nas Ayat 4</button>
+                <button onclick="checkAnswer(this, true)" data-original-text="Al-Insyirah Ayat 5">Al-Insyirah Ayat
+                    5</button>
+                <button onclick="checkAnswer(this, false)">Al-Mulk Ayat 22</button>
+            </div>
+        </div>
+    </main>
+
+    <footer-bar></footer-bar>
+
+    <script src="../script/app.js" type="module"></script>
+    <script src="../script/quiz.js"></script>
+</body>
+
+</html>
