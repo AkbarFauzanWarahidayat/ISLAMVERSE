@@ -13,7 +13,7 @@ Situs web Islam yang bertujuan untuk memberikan sumber daya berkualitas, terperc
 ## Directory Structure
 - components : custom elemen untuk footer-bar, nav-bar, eventScroll
 - fitur-assets : file-file statis html fitur-fitur selain fitur Al-Qur'an
-- image : file-file statis yaitu gambar, ikon
+- image : file-file statis yaitu gambar, ikon-ikon
 - script : file-file sumber kode semua fitur
 - styles : file styling semua fitur
 - index.html : file fitur Al-Qur'an (sebagai Homepage)
@@ -24,19 +24,19 @@ Situs web Islam yang bertujuan untuk memberikan sumber daya berkualitas, terperc
   
 ## Installation
 
-1. *Kloning Repository*: Lakukan clone repository ini ke dalam komputer lokal Anda menggunakan perintah git clone.
+1. *Kloning Repository*: Lakukan clone repository ini menggunakan perintah git clone.
 
-2. *Instalasi Dependensi*: Pastikan Anda memiliki Node.js dan npm terinstal di komputer Anda. Kemudian, jalankan perintah npm install untuk menginstal semua dependensi yang diperlukan.
+2. *Instalasi Dependensi*: Pastikan sudah memiliki Node.js dan npm terinstal. Kemudian, jalankan perintah npm install (untuk menginstal semua dependensi yang diperlukan).
 
-3. *Menjalankan Aplikasi*: Setelah selesai menginstal dependensi, jalankan perintah npm start untuk memulai server lokal.
+3. *Menjalankan Aplikasi*: Jalankan perintah npm start untuk memulai server lokal.
 
 ## Contribution
 
-Jika Anda ingin berkontribusi pada pengembangan ISLAMVERSE, silakan ikuti langkah-langkah berikut:
+Jika ingin berkontribusi pada pengembangan ISLAMVERSE, silakan ikuti langkah-langkah berikut:
 
 1. Buat cabang baru (git checkout -b fitur-baru)
 2. Lakukan perubahan yang diperlukan
-3. Commit perubahan Anda (git commit -am 'Menambahkan fitur baru')
+3. Commit perubahan (git commit -am 'Menambahkan fitur baru')
 4. Push ke cabang yang baru saja dibuat (git push origin fitur-baru)
 5. Kirim pull request
 
