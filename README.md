@@ -53,4 +53,5 @@ Jika Anda ingin berkontribusi pada pengembangan ISLAMVERSE, silakan ikuti langka
 islamversehub@gmail.com
 
 ## Capstone Project - C624-PS148 [SIB DICODING CYCLE 6]
+
 #### ©2024 ISLAMVERSE
